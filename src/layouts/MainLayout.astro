@@ -1,0 +1,19 @@
+---
+import '../styles/global.css'
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+	</head>
+	<body transition:animate="initial" class='flex flex-col min-h-screen grainy-overlay'>
+		<noscript>
+			<p class="text-center font-medium italic text-primary m-2">
+				Please enable JavaScript for the best experience on this site.
+			</p>
+		</noscript>
+		<main class='flex-grow'>
+			<slot />
+		</main>
+	</body>
+</html>

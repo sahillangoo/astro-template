@@ -1,0 +1,24 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import { Picture } from 'astro:assets'
+import myImage from '../images/lucas-k-wQLAGv4_OYs-unsplash.jpg'
+---
+
+<MainLayout>
+	<section class='h-screen'>
+		<div class='flex items-center justify-center h-full bg-dark'>
+			<div class='text-center'>
+				<Picture
+					class='object-cover object-center rounded-lg shadow-md'
+					src={myImage}
+					formats={['avif', 'webp']}
+					alt='Smoke Background.'
+					width={500}
+					height={500}
+				/>
+				<h1 class='text-5xl font-semibold'>Hello World!</h1>
+				<p class='mt-4 text-lg'>This is an Astro Template.</p>
+			</div>
+		</div>
+	</section>
+</MainLayout>
